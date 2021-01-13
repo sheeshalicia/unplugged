@@ -103,7 +103,8 @@ body{
 
 ul, ol{
   list-style-type: none;
-
+  margin: 0;
+  padding: 0;
 }
 
 a{
@@ -114,13 +115,14 @@ a{
 h2{
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
-  font-weight: normal;
+  font-weight: 500;
+  margin: 0;
 }
 
 h3, h4{
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
-  font-weight: normal;
+  font-weight: 500;
   margin: 20px 0;
 }
 
@@ -150,7 +152,6 @@ address{
 
 header{
 padding: 15px 0;
-background-color: #202322;
 }
 
 header, footer{
@@ -158,6 +159,7 @@ header, footer{
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header .content-wrapper{
@@ -202,13 +204,15 @@ header nav ul{
 }
 
 header nav ul li{
-  font-sie: 1.125em;
+  font-size: 1.125em;
 }
 
 footer {
   flex-direction: column;
   text-align: center;
-  background-color: #202322;
+}
+footer p{
+  margin: 0;
 }
 
 footer .content-wrapper{
@@ -240,9 +244,7 @@ footer .social-icons p i{
   font-size: 1.3125em;
 }
 
-footer p{
-  margin: 0;
-}
+
 
 footer .copyright{
   margin: 20px 0;
@@ -252,12 +254,12 @@ footer .copyright{
 /* ----------------- mobile styles --homepage------------------ */
 
 .hero-area{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
   background: url('../assets/jake-melara-30679-unsplash1.jpg') center no-repeat #333;
   background-size: cover;
   min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 .hero-area h1{
@@ -302,11 +304,11 @@ input[type=button] {
 }
 
 .features{
+  background: url('../assets/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../assets/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
-  background-size: cover;
 }
 
 .features h2{
@@ -351,11 +353,6 @@ input[type=button] {
   width: 55%;
   padding: 20px 0;
 }
-
-.reviews p{
-  margin: 0;
-}
-
 
 
 /*  Mobile Styles====================================================================
@@ -524,7 +521,6 @@ input[type=button] {
 @media screen and (min-width: 768px) {
   /* Tablet styles here */
 
-
 .content-wrapper{
     max-width: 640px;
     margin: 100px 0;
@@ -565,9 +561,10 @@ header nav ul{
 header .header-divider{
      display: none;
 }
+
 footer .content-wrapper{
-    marginf: 100px 0;
-    width: 62%;
+    margin: 100px 0;
+    width: 65%;
 }
 
 footer .footer-content{
@@ -635,11 +632,15 @@ aside .content-wrapper .form {
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    flex-basis: 50%
+    flex-basis: 50%;
 }
 
 .features .features-item-description{
   width: 62%;
+}
+
+.features i{
+  margin-bottom: 30px;
 }
 
 .reviews article{
@@ -659,6 +660,7 @@ aside .content-wrapper .form {
 .reviews h3{
   width: 75%;
   margin: 0;
+  padding: 0;
 }
 
 
@@ -692,7 +694,7 @@ aside .content-wrapper .form {
 }
 
 .map figure{
-    padding-bottom: 45%;
+    padding-bottom: 45.5%;
   }
 }
 
@@ -717,7 +719,6 @@ aside .content-wrapper .form {
       font-size: .875em;
       line-height: 1.125;
   }
-}
 
 
 @media screen and (min-width: 1200px) {
@@ -800,7 +801,7 @@ footer h4{
   }
 
   .map figure{
-      padding-bottom: 37%;
+      padding-bottom: 37.5%;
     }
 
 /* ==========================================================================
@@ -815,8 +816,6 @@ footer h4{
     font-size: 1.125em;
     line-height: 1;
   }
-
-}
 
 }
 
